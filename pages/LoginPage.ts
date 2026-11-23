@@ -1,0 +1,10 @@
+import { BasePage } from './BasePage';
+
+export class LoginPage extends BasePage {
+  async login(username: string, password: string): Promise<void> {
+    await this.navigate('https://www.saucedemo.com/');
+    await this.page.getByPlaceholder('Username').fill(username);
+    await this.page.getByPlaceholder('Password').fill(password);
+    await this.page.getByRole('button', { name: 'Login' }).click();
+  }
+}

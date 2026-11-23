@@ -1,0 +1,81 @@
+# Steps to use a Playwright agent on our system. 
+1. Create one folder with the name Playwright-Agents. 
+2. Open terminal Playwright-agent folder.
+3. Install Playwright freshly in this folder. Using the below command 
+   -> npm init playwright@latest
+   -> Go with all default options and complete the installation.  
+
+4. Open your VS Code in that dedicated project folder. 
+    File -> Open Folder -> GTM_Playwright_Batch17 -> DeepeshY ->  Playwright-Agents
+
+
+5. On your terminal, run the command below to create the agent in the current project. 
+   -> npx playwright init-agents --loop=vscode
+   -> This command will create all three agents for us on our system. 
+    🌱 tests\seed.spec.ts - default environment seed file
+ 🤖 .github\agents\playwright-test-generator.agent.md - agent definition
+ 🤖 .github\agents\playwright-test-healer.agent.md - agent definition
+ 🤖 .github\agents\playwright-test-planner.agent.md - agent definition
+ 🔧 .vscode\mcp.json - mcp configuration
+ 🔧 .github\workflows\copilot-setup-steps.yml
+
+ # All agents will be created under .github/agents folder
+ 
+ # We'll create one mcp.json file inside the .vscode folder.
+
+ #  Open each agent file from configure tools and provide acess
+   of all tools.
+
+
+# If AI agents are visible in the GitHub Copilot agent window 
+# -> go to AI chat window -> Click on the plus icon. 
+# -> Click on agent. -> Three agents should be visible under Copilot agent. 
+
+# Create a comprehensive test plan for the source demo website. 
+Agent : playwright-test-planner
+
+Prompt :
+Using the seed test, create a test plan for the 
+cart and checkout flows of Sauce Demo: adding and 
+removing items, cart badge, checkout information 
+validation and order completion
+
+
+-> Agent : generator
+-> Prompt :
+"Generate tests for section 1 of specs/cart-and-checkout.md"
+
+
+-> Agent : healer
+-> Prompt:
+“Run the cart tests and fix any failures.”
+
+
+// Upgrade the existing framework with the Page Object Model framework. 
+- Redesign this current framework with the Page Object Model framework. 
+- Follow the following directory structure for POM
+1. pages
+2. fixture
+3. test
+4. test data
+5. utils
+6. report
+7. docs
+- Framework has to be implemented with the base page and page manager concept 
+
+
+
+################# Dummy Booking Website ###################
+Agent : Planner 
+Prompt :
+
+Generate a comprehensive test plan for this website., Try to cover all the positive, negative, and edge case scenarios for this website. 
+https://sqatools.in/dummy-booking-website/
+
+
+Agent : copilot agent
+Prompt:
+
+Integrate Allure Report in the existing framework, execute all the test cases, 
+and generate the report. Also, show the steps and add in the README file how to 
+generate the report.
