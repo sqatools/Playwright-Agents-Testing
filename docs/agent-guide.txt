@@ -79,3 +79,42 @@ Prompt:
 Integrate Allure Report in the existing framework, execute all the test cases, 
 and generate the report. Also, show the steps and add in the README file how to 
 generate the report.
+
+
+Prompt :
+
+09:33
+
+Create a repository with the name Playwright-Agents-Testing.
+Clone Playwright-Agents-Testing repository in this path.
+E:\Trainings
+
+09:35
+
+configure github MCP server
+
+09:37 — same as prompt 1.
+
+09:39
+
+copy all content from current project to E:\Trainings\Playwright-Agents-Testing project
+
+09:45
+
+All the test cases, and check if there are any configuration changes required.
+
+09:53
+
+execute All the test cases, and check if there are any configuration changes required and fix the failures
+
+09:55
+
+Push all code changes to the repository.
+
+09:56
+
+Stop execution for now and push the code first.
+
+10:10
+
+get me all prompts that I used today so far
