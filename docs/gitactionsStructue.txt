@@ -1,0 +1,19 @@
+name : Pipeline name
+on : trigger event (push, pull, manual trigger(workflow_dispatch), schedule )
+jobs : 
+      job1:
+          runs-on: ubuntu-latest
+          step1
+          step2
+          step3
+      job2:
+           runs-on: ubuntu-latest
+           step1
+           step2
+           step3
+
+      job3:
+           runs-on: ubuntu-latest
+           step1
+           step2
+           step3
